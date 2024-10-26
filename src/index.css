@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-updater-node {
+  height: 50px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+
+.react-flow__edge-path {
+  stroke: #222;
+  stroke-width: 2;
+}
+
+.marker-arrow {
+  markerWidth: 10;
+  markerHeight: 10;
+  refX: 9;
+  refY: 3;
+  orient: auto;
+}
+
+svg defs marker#arrow {
+  fill: #222;
+}
+
+.actor-node {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+/* Styles for the UseCaseNode container */
+.use-case-node {
+  font-size: 10px;
+  font-weight: bold;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ADD8E6; */
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #000;
+  background-color: #fff; /* Ellipse color */
+  border-radius: 50%; /* Make the node an ellipse */
+  padding: 10px; /* Padding inside the node */
+  display: flex; /* Use flex to center the input */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 60px; /* Set height to maintain an ellipse shape */
+  width: 100px; /* Set width to maintain an ellipse shape */
+}
+
+
+
+.node-input {
+  font-size: 10px;
+  font-weight: bold;
+  border: none; /* Remove default border */
+  background-color: #fff; /* Match ellipse background color */
+  outline: none; /* Remove outline on focus */
+  text-align: center; /* Center the text in the input */
+  width: 100%; /* Full width */
+  
+}
+
+
+/* Styles for the MisuseCaseNode container */
+.misuse-case-node {
+ 
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ADD8E6; */
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: #000; /* Ellipse color */
+  border-radius: 50%; /* Make the node an ellipse */
+  padding: 10px; /* Padding inside the node */
+  display: flex; /* Use flex to center the input */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 60px; /* Set height to maintain an ellipse shape */
+  width: 100px; /* Set width to maintain an ellipse shape */
+}
+
+
+
+.misuse-node-input {
+  font-size: 10px;
+  font-weight: bold;
+  border: none; /* Remove default border */
+  background-color: #000; /* Match ellipse background color */
+  outline: none; /* Remove outline on focus */
+  text-align: center; /* Center the text in the input */
+  width: 100%; /* Full width */
+  color: #fff;
+}
+
+
+/* Handle styles, ensuring they are always visible */
+.react-flow__handle {
+  background-color: #555;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 1; /* Ensure they are fully visible */
+}
+
+.system-node {
+  width: 100px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  background-color: #ADD8E6; /* Semi-transparent white */
+  backdrop-filter: blur(5px); 
+  border: 2px solid #ccc; /* Border for the square */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Positioning for handles */
+}
+
+.system-node div {
+  font-size: 10px;
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Text color */
+}
+
+
+.collaboration-node {
+  width: 150px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  border: 2px dotted #555; /* Dotted border */
+  border-radius: 50%; /* Make it an ellipse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Positioning for handles */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.collaboration-node div {
+  font-size: 10px;
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Text color */
+}
+
+.radio-label {
+  margin-right: 15px; /* Add space between radio buttons */
+}
